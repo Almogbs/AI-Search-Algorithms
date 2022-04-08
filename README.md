@@ -1,8 +1,20 @@
 # AI-Search-Algorithms
 
 ### - Breadth-First Search - BFS Algorithm
+- Comlete: yes, always find the a solution
+- Optimal: yes, always find the best solution
+- Time Complexity: O(b^s), when: b - branching factor, s - tier of best the solution
+- Space Complexity: O(b^s)
 ### - Depth-First Search - DFS Algorithm
+- Comlete: yes, always find the a solution
+- Optimal: no, always find the first solution it sees
+- Time Complexity: O(b^m), when: b - branching factor, m - tier of first solution it sees ("leftmost") solution
+- Space Complexity: O(b*m)
 ### - Iterative Deepening Depth-First Search - ID-DFS Algorithm 
+- Comlete: yes, always find the a solution (when depth high enough)
+- Optimal: yes, always find the best solution (when depth high enough)
+- Time Complexity: O(b^s), when: b - branching factor, s - tier of best the solution
+- Space Complexity: O(b*s)
 
 #### We will use the above Algorithms to solve the following problem:
 
