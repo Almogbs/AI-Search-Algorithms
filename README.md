@@ -1,18 +1,23 @@
 # AI-Search-Algorithms
 
-### - Breadth-First Search - BFS Algorithm
+### - Breadth-First Search - BFS Algorithm (in Graph)
 - Comlete: yes, always find the a solution
 - Optimal: yes, always find the best solution
 - Time Complexity: O(b^s), when: b - branching factor, s - tier of best the solution
 - Space Complexity: O(b^s)
-### - Depth-First Search - DFS Algorithm
-- Comlete: yes, always find the a solution
-- Optimal: no, always find the first solution it sees
+### Limited Depth-First Search - DFS-L Algorithm (in Tree)
+- Comlete: no, solution might be deeper than *l*
+- Optimal: no, optimal solution might be deeper than *l*
+- Time Complexity: O(b^l), when: b - branching factor, l - depth limitation
+- Space Complexity: O(b*l)
+### - Depth-First Search - DFS Algorithm (in Tree)
+- Comlete: no, can be stuck in a loop
+- Optimal: no, can be stuck in a loop
 - Time Complexity: O(b^m), when: b - branching factor, m - tier of first solution it sees ("leftmost") solution
 - Space Complexity: O(b*m)
-### - Iterative Deepening Depth-First Search - ID-DFS Algorithm 
-- Comlete: yes, always find the a solution (when depth high enough)
-- Optimal: yes, always find the best solution (when depth high enough)
+### - Iterative Deepening Depth-First Search - ID-DFS Algorithm (in Tree)
+- Comlete: yes, always find the a solution 
+- Optimal: yes, always find the best solution
 - Time Complexity: O(b^s), when: b - branching factor, s - tier of best the solution
 - Space Complexity: O(b*s)
 
