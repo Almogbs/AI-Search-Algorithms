@@ -20,6 +20,16 @@
 - Optimal: yes, always find the best solution
 - Time Complexity: O(b^s), when: b - branching factor, s - tier of best the solution
 - Space Complexity: O(b*s)
+### Weighted-A* Search - W-A* Algorithm (in Tree)
+- Comlete: yes, always find the a solution
+- Optimal: yes, always find the best solution
+- Time Complexity: O(b^s), when: b - branching factor, s - tier of best the solution  
+- Space Complexity: O(b*s)
+### A*-epsilon Search - A*-Epsilon Algorithm (in Tree)
+- Comlete: yes, always find the a solution
+- Optimal: yes, always find the best solution
+- Time Complexity: O(b^s), when: b - branching factor, s - tier of best the solution  
+- Space Complexity: O(b*s)
 
 #### We will use the above Algorithms to solve the following problem:
 
