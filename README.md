@@ -25,6 +25,16 @@
 - Optimal: yes, always find the best solution
 - Time Complexity: O(b^s), when: b - branching factor, s - tier of best the solution  
 - Space Complexity: O(b*s)
+### Uniform Cost Search - UCS Algorithm (in Tree)
+- Comlete: yes, always find the a solution
+- Optimal: yes, always find the best solution
+- Time Complexity: O(b^s), when: b - branching factor, s - tier of best the solution  
+- Space Complexity: O(b*s)
+### Greedy Best-First Search - G-BFS Algorithm (in Tree)
+- Comlete: yes (when the number of states is final)
+- Optimal: no, depends only on heuristic function
+- Time Complexity: O(b^s), when: b - branching factor, s - tier of best the solution  
+- Space Complexity: O(b*s)
 ### A*-epsilon Search - A*-Epsilon Algorithm (in Tree)
 - Comlete: yes, always find the a solution
 - Optimal: yes, always find the best solution
