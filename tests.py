@@ -4,14 +4,12 @@
 
 """
 
-
-from gym.core import Wrapper
 import signal
 
 def signal_handler(signum, frame):
     raise Exception("timeout")
 
-timeout = 22
+timeout = 5
 signal.signal(signal.SIGALRM, signal_handler)
 signal.alarm(timeout)
 
@@ -31,6 +29,7 @@ for algo in range(4):
     print("START {} TESTS:".format(algorithm_names[algo]))
     fail_flag = False
     for state in range(500):
+        signal.alarm(timeout)
         try:
             env.unwrapped.s = state
             frames, reward = algo_wrapper(algorithm_func[algo], [state] + algorithm_args[algo])
@@ -54,6 +53,5 @@ for algo in range(4):
             print("   {} TEST #{}: FAILED ({})".format(algorithm_names[algo], state, e))
     if not fail_flag:
         print("   all {} - PASSED".format(algorithm_names[algo]))
-
 
 print("PASS: {}, FAIL: {}".format(passed , failed))
